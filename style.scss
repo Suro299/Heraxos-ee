@@ -70,16 +70,26 @@ body {
 
 .header {
     width: 32.4rem;
-    height: 1.5rem;
+    height: 1.8rem;
     position: absolute;
     display: flex;
     justify-content: center;
-    padding-top: 0.5rem;
-    // border: 1px blue solid;
+    margin-top: 0rem;
     z-index: 10;
+    // border: 1px blue solid;
+    display: flex;
+    align-items: center;
     div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(100px);
         color: whitesmoke;
         font-size: 1.2rem;
+        z-index: 2;
+        // border: 1px solid red;
     }
 }
 
@@ -162,6 +172,7 @@ body {
         border-radius: 10px;
         margin: 0.5rem 1rem 0.5rem 1rem;
         transition: 0.2s;
+        
         &:hover {
             cursor: pointer;
             filter: contrast(100%);
@@ -175,6 +186,19 @@ body {
         background-image: url(./img/app_icon/settings_app_icons/settings_icon.png);
         background-size: 100% 100%;
         filter: contrast(150%);
+    }
+
+    .app_stor {
+        background-image: url(./img/app_icon/app_store_app_icon/app_store_icon.svg);
+        background-size: 100% 100%;
+        filter: contrast(150%);
+    }
+
+    .calc_app {
+        background-image: url(./img/app_icon/app_store_app_icon/Calculyator/Calculyator_app_icon.png);
+        background-size: 136% 128%;
+        filter: contrast(150%);
+        background-position: 42% 52%;
     }
 }
 
@@ -251,4 +275,92 @@ body {
         
     }
 
+}
+
+.wallpapers_screen {
+    @extend %screens;
+    background-color: lighten(#000000, 6);
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding-top: 2rem;
+    overflow-y: scroll;
+
+    div {
+        width: 13rem;
+        height: 25rem;
+        overflow: hidden;
+        margin: 1rem;
+        
+        img {
+            width: 100%;  
+            opacity: 0.7;
+            transition: 0.2s;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }  
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.app_stor_app_screen {
+    @extend %screens;
+    background-color: lighten(#000000, 6);
+    display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding-top: 2rem;
+    overflow-y: scroll;
+    padding-top: 4rem;
+    
+    div{
+        border-radius: 5px;
+        width: 100%;
+        height: 8rem;
+        transition: 0.2s;
+        padding-left: 1rem;
+        background-color: lighten(#000000, 10);
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: lighten(#000000, 11); 
+            cursor: pointer;
+        }
+
+        img {
+            width: 20%;
+            height: 77%;
+        }
+
+        h1 {
+            color: whitesmoke;
+            font-size: 1.8rem;
+            margin-left: 1rem;
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 15px;
+            position: absolute;
+            background-color: lighten(#000000, 25); 
+            color: rgb(50, 132, 255);
+            font-weight: 600;
+            font-size: 1.7rem;
+            margin-left: 65%;
+            &:hover {
+                cursor: pointer;
+                background-color: lighten(#000000, 28); 
+            }
+            &:active{
+                background-color: lighten(#000000, 25); 
+            }
+        }
+    }
 }
