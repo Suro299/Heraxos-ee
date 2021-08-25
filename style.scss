@@ -85,7 +85,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        backdrop-filter: blur(100px);
+        backdrop-filter: blur(20px);
         color: whitesmoke;
         font-size: 1.2rem;
         z-index: 2;
@@ -369,7 +369,6 @@ body {
             font-size: 1.7rem;
             margin-left: 65%;
             transition: 0.5s;
-            // display: none;
             &:hover {
                 cursor: pointer;
                 background-color: lighten(#000000, 28); 
@@ -404,7 +403,9 @@ body {
     align-items: center;
     color: whitesmoke;
     font-size: 3rem;
-    z-index: 1; 
+    z-index: 2;
+    height: 52rem;
+    margin-top: -2rem
 }
 
 
@@ -424,16 +425,13 @@ body {
         outline: none;
         overflow-y: scroll;
         overflow-x: hidden;
-        // border: 1px solid red;
     }
     
     .klav {
-        // border: 1px solid black;
         width: auto;
         height: 80%;
         margin-top: 0.5rem;
         padding-top: 3rem;
-        // border: 1px  solid red;
     }
     
     .but {
@@ -470,4 +468,23 @@ body {
         color: whitesmoke;
         background-color: lighten(#000000, 15);
     }
+}
+.camera {
+    margin-bottom: 58rem;
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(39, 37, 37);
+    z-index: 3;
+    margin-left: 5.5rem;
+}
+#mikrafon {
+    margin-bottom: 58rem;
+    position: absolute;
+    border-radius: 10px;
+    width: 4rem;
+    height: 1rem;
+    background-color: rgb(39, 37, 37);
+    z-index: 3;
 }

@@ -1,24 +1,18 @@
-.time_div, .bl_screen .time_div_2 {
+.bl_screen .time_div_2, .time_div {
   position: absolute;
   margin-top: 3rem;
   margin-left: 4rem;
   width: 25rem;
   height: 13rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: whitesmoke;
   font-size: 8rem;
   text-shadow: 0px 0px 20px #1a1a1a;
 }
 
-.screen, .settings_app_screen, .wallpapers_screen, .app_stor_app_screen, .pls_en_wi, .calc_screen {
+.calc_screen, .pls_en_wi, .app_stor_app_screen, .wallpapers_screen, .settings_app_screen, .screen {
   width: 32.4rem;
   height: 51rem;
   position: absolute;
@@ -42,12 +36,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -56,15 +46,9 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   height: 100vh;
 }
@@ -81,39 +65,24 @@ body {
   width: 32.4rem;
   height: 1.8rem;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 0rem;
   z-index: 10;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header div {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
   color: whitesmoke;
   font-size: 1.2rem;
   z-index: 2;
 }
-
 .header img {
   display: none;
   position: absolute;
@@ -138,18 +107,15 @@ body {
   height: 5rem;
   border-radius: 100%;
   border: 2px inset black;
-  background: -webkit-gradient(linear, left top, right top, from(#0d0d0d), to(#171717));
   background: linear-gradient(90deg, #0d0d0d, #171717);
   margin-top: 56.5rem;
   margin-left: 1rem;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   z-index: 1;
   cursor: pointer;
   z-index: 2;
   position: absolute;
 }
-
 .home_but:active {
   background: #0d0d0d;
 }
@@ -169,11 +135,9 @@ body {
   background-position-y: 30%;
   background-repeat: no-repeat;
   text-align: center;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
 }
-
 .bl_screen .phb {
   color: whitesmoke;
   font-size: 1.8rem;
@@ -192,63 +156,43 @@ body {
   width: 32.4rem;
   margin-top: 4rem;
   padding: 0rem 1rem 0rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-
 .app_div .apps_div {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 10px;
   margin: 0.5rem 1rem 0.5rem 1rem;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .app_div .apps_div:hover {
   cursor: pointer;
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
+  filter: contrast(100%);
 }
-
 .app_div .apps_div:active {
-  -webkit-filter: contrast(150%);
-          filter: contrast(150%);
+  filter: contrast(150%);
 }
-
 .app_div .settings_app {
   background-image: url(./img/app_icon/settings_app_icons/settings_icon.png);
   background-size: 100% 100%;
-  -webkit-filter: contrast(150%);
-          filter: contrast(150%);
+  filter: contrast(150%);
 }
-
 .app_div .app_stor {
   background-image: url(./img/app_icon/app_store_app_icon/app_store_icon.svg);
   background-size: 100% 100%;
-  -webkit-filter: contrast(150%);
-          filter: contrast(150%);
+  filter: contrast(150%);
 }
-
 .app_div .calc_app {
   background-image: url(./img/app_icon/app_store_app_icon/Calculyator/Calculyator_app_icon.png);
   background-size: 136% 128%;
-  -webkit-filter: contrast(150%);
-          filter: contrast(150%);
+  filter: contrast(150%);
   background-position: 42% 52%;
 }
 
 .settings_app_screen {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   display: none;
   z-index: 1;
@@ -258,47 +202,34 @@ body {
   color: whitesmoke;
   font-size: 2rem;
   padding: 3rem 2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .avi_wi_blu {
   overflow: hidden;
 }
-
 .avi_wi_blu div {
   font-size: 1.8rem;
   padding: 1rem 0 1rem 1rem;
   border-top: rgba(192, 192, 192, 0.212) 1px solid;
   border-bottom: rgba(192, 192, 192, 0.212) 1px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.2s;
+  align-items: center;
   transition: 0.2s;
 }
-
 .avi_wi_blu div:hover {
   background-color: #2e2e2e;
   cursor: pointer;
 }
-
 .avi_wi_blu div:first-child, .avi_wi_blu div:last-child {
   border: none;
 }
-
 .avi_wi_blu div img {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1.5rem;
   border-radius: 5px;
 }
-
 .avi_wi_blu div:nth-child(1) span, .avi_wi_blu div:nth-child(2) span {
   width: 5rem;
   height: 2.5rem;
@@ -307,10 +238,8 @@ body {
   position: absolute;
   margin-left: 63%;
   cursor: pointer;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .avi_wi_blu div:nth-child(1) span span, .avi_wi_blu div:nth-child(2) span span {
   width: 52%;
   height: 100%;
@@ -321,35 +250,27 @@ body {
 .wallpapers_screen {
   background-color: #0f0f0f;
   display: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   z-index: 1;
   padding-top: 2rem;
   overflow-y: scroll;
 }
-
 .wallpapers_screen div {
   width: 13rem;
   height: 25rem;
   overflow: hidden;
   margin: 1rem;
 }
-
 .wallpapers_screen div img {
   width: 100%;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .wallpapers_screen div img:hover {
   cursor: pointer;
   opacity: 0.9;
 }
-
 .wallpapers_screen div img:active {
   opacity: 1;
 }
@@ -357,49 +278,36 @@ body {
 .app_stor_app_screen {
   background-color: #0f0f0f;
   display: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   z-index: 1;
   padding-top: 2rem;
   overflow-y: scroll;
   padding-top: 4rem;
 }
-
 .app_stor_app_screen div {
   border-radius: 5px;
   width: 100%;
   height: 8rem;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   padding-left: 1rem;
   background-color: #1a1a1a;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .app_stor_app_screen div:hover {
   background-color: #1c1c1c;
   cursor: pointer;
 }
-
 .app_stor_app_screen div img {
   width: 20%;
   height: 77%;
 }
-
 .app_stor_app_screen div h1 {
   color: whitesmoke;
   font-size: 1.8rem;
   margin-left: 1rem;
 }
-
 .app_stor_app_screen div button {
   padding: 0.5rem 2rem;
   border: none;
@@ -410,19 +318,15 @@ body {
   font-weight: 600;
   font-size: 1.7rem;
   margin-left: 65%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .app_stor_app_screen div button:hover {
   cursor: pointer;
   background-color: #474747;
 }
-
 .app_stor_app_screen div button:active {
   background-color: #404040;
 }
-
 .app_stor_app_screen div .load_div {
   position: absolute;
   display: none;
@@ -440,31 +344,23 @@ body {
 .pls_en_wi {
   background-color: #171717;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: whitesmoke;
   font-size: 3rem;
-  z-index: 1;
+  z-index: 2;
+  height: 52rem;
+  margin-top: -2rem;
 }
 
 .calc_screen {
   background-color: #171717;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 3rem;
 }
-
 .calc_screen .ekr_1 {
   width: 100%;
   height: 20%;
@@ -472,14 +368,12 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 .calc_screen .klav {
   width: auto;
   height: 80%;
   margin-top: 0.5rem;
   padding-top: 3rem;
 }
-
 .calc_screen .but {
   margin-top: 0.5rem;
   width: 24.3%;
@@ -490,20 +384,16 @@ body {
   color: whitesmoke;
   background-color: #474747;
 }
-
 .calc_screen .but:hover {
   cursor: pointer;
   background-color: #4d4d4d;
 }
-
 .calc_screen .but_2 {
   background-color: orange;
 }
-
 .calc_screen .but_2:hover {
   background-color: #ffaa0f;
 }
-
 .calc_screen .inp {
   width: 100%;
   height: 100%;
@@ -514,4 +404,26 @@ body {
   color: whitesmoke;
   background-color: #262626;
 }
+
+.camera {
+  margin-bottom: 58rem;
+  position: absolute;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #272525;
+  z-index: 3;
+  margin-left: 5.5rem;
+}
+
+#mikrafon {
+  margin-bottom: 58rem;
+  position: absolute;
+  border-radius: 10px;
+  width: 4rem;
+  height: 1rem;
+  background-color: #272525;
+  z-index: 3;
+}
+
 /*# sourceMappingURL=style.css.map */
