@@ -18,7 +18,7 @@
   text-shadow: 0px 0px 20px #1a1a1a;
 }
 
-.screen, .settings_app_screen, .wallpapers_screen, .app_stor_app_screen {
+.screen, .settings_app_screen, .wallpapers_screen, .app_stor_app_screen, .pls_en_wi, .calc_screen {
   width: 32.4rem;
   height: 51rem;
   position: absolute;
@@ -114,6 +114,14 @@ body {
   z-index: 2;
 }
 
+.header img {
+  display: none;
+  position: absolute;
+  width: 1.2rem;
+  height: 1rem;
+  margin-left: -92%;
+}
+
 .her_div {
   width: 34rem;
   height: 65rem;
@@ -171,6 +179,13 @@ body {
   font-size: 1.8rem;
   margin-top: 142%;
   text-shadow: 0px 0px 20px #1a1a1a;
+}
+
+.ap_ob_div h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 10px black;
+  color: whitesmoke;
 }
 
 .app_div {
@@ -284,7 +299,7 @@ body {
   border-radius: 5px;
 }
 
-.avi_wi_blu div:nth-child(1) span {
+.avi_wi_blu div:nth-child(1) span, .avi_wi_blu div:nth-child(2) span {
   width: 5rem;
   height: 2.5rem;
   border-radius: 20px;
@@ -296,7 +311,7 @@ body {
   transition: 0.5s;
 }
 
-.avi_wi_blu div:nth-child(1) span span {
+.avi_wi_blu div:nth-child(1) span span, .avi_wi_blu div:nth-child(2) span span {
   width: 52%;
   height: 100%;
   background-color: white;
@@ -395,6 +410,8 @@ body {
   font-weight: 600;
   font-size: 1.7rem;
   margin-left: 65%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .app_stor_app_screen div button:hover {
@@ -404,5 +421,97 @@ body {
 
 .app_stor_app_screen div button:active {
   background-color: #404040;
+}
+
+.app_stor_app_screen div .load_div {
+  position: absolute;
+  display: none;
+  padding: 0.5rem 0.5rem 0.7rem 0.8rem;
+  color: #3284ff;
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 1px solid #3284ff;
+  margin-left: 71.5%;
+  background-color: transparent;
+}
+
+.pls_en_wi {
+  background-color: #171717;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.calc_screen {
+  background-color: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+}
+
+.calc_screen .ekr_1 {
+  width: 100%;
+  height: 20%;
+  outline: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.calc_screen .klav {
+  width: auto;
+  height: 80%;
+  margin-top: 0.5rem;
+  padding-top: 3rem;
+}
+
+.calc_screen .but {
+  margin-top: 0.5rem;
+  width: 24.3%;
+  height: 8rem;
+  font-size: 3rem;
+  border-radius: 100%;
+  border: none;
+  color: whitesmoke;
+  background-color: #474747;
+}
+
+.calc_screen .but:hover {
+  cursor: pointer;
+  background-color: #4d4d4d;
+}
+
+.calc_screen .but_2 {
+  background-color: orange;
+}
+
+.calc_screen .but_2:hover {
+  background-color: #ffaa0f;
+}
+
+.calc_screen .inp {
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  color: whitesmoke;
+  background-color: #262626;
 }
 /*# sourceMappingURL=style.css.map */

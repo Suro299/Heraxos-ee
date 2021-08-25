@@ -89,7 +89,14 @@ body {
         color: whitesmoke;
         font-size: 1.2rem;
         z-index: 2;
-        // border: 1px solid red;
+    }
+
+    img {
+        display: none;
+        position: absolute;
+        width: 1.2rem;
+        height: 1rem;
+        margin-left: -92%;
     }
 }
 
@@ -152,6 +159,15 @@ body {
         font-size: 1.8rem;
         margin-top: 142%;
         text-shadow: 0px 0px 20px #1a1a1a;
+    }
+}
+
+.ap_ob_div {
+    h1  {
+        text-align: center;
+        font-size: 1.5rem;
+        text-shadow: 0px 0px 10px black;
+        color: whitesmoke;
     }
 }
 
@@ -251,10 +267,8 @@ body {
 
         // TUMBLER
 
-        &:nth-child(1) {
+        &:nth-child(1), &:nth-child(2) {
             
-            
-
             span {
                 width: 5rem;
                 height: 2.5rem;
@@ -354,13 +368,106 @@ body {
             font-weight: 600;
             font-size: 1.7rem;
             margin-left: 65%;
+            transition: 0.5s;
+            // display: none;
             &:hover {
                 cursor: pointer;
                 background-color: lighten(#000000, 28); 
+    
             }
             &:active{
                 background-color: lighten(#000000, 25); 
             }
         }
+
+        .load_div {
+            position: absolute;
+            display: none;
+            padding: 0.5rem 0.5rem 0.7rem 0.8rem;
+            color: rgb(50, 132, 255);
+            font-size: 1.8rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            border: 1px solid rgb(50, 132, 255);
+            margin-left: 71.5%;
+            background-color: transparent;
+        }
+    }
+}
+
+.pls_en_wi  {
+    @extend %screens;
+    background-color: lighten(#000000, 9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    z-index: 1; 
+}
+
+
+
+.calc_screen {
+    @extend %screens;
+    background-color: lighten(#000000, 9);
+    display: flex;
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    
+    .ekr_1 {
+        width: 100%;
+        height: 20%;
+        outline: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        // border: 1px solid red;
+    }
+    
+    .klav {
+        // border: 1px solid black;
+        width: auto;
+        height: 80%;
+        margin-top: 0.5rem;
+        padding-top: 3rem;
+        // border: 1px  solid red;
+    }
+    
+    .but {
+        margin-top: 0.5rem;
+        width: 24.3%;
+        height: 8rem;
+        font-size: 3rem;
+        border-radius: 100%;
+        border: none;
+        color: whitesmoke;
+        background-color: lighten(#000, 28);
+        &:hover {
+            cursor: pointer;
+            background-color: lighten(#000, 30);
+        }
+    }
+
+    .but_2 {
+        background-color: orange;
+        &:hover {
+            background-color: lighten(orange, 3);
+        }
+    }
+
+  
+    
+    .inp {
+        width: 100%;
+        height: 100%;
+        font-size: 4rem;
+        text-align: right;
+        padding: 10px;
+        border: none;
+        color: whitesmoke;
+        background-color: lighten(#000000, 15);
     }
 }

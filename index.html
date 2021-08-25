@@ -16,7 +16,7 @@
 
         <section id="screen" class="screen">
 
-            <header class="header"> <div id="time_div_header"></div> </header>
+            <header class="header"> <img id="wi_fi_icon" src="./img/icon/Wi-Fi_icon.png" alt=""> <div id="time_div_header"></div> </header>
 
             <div id="block_screen" class="bl_screen">
                 <div id="time_div_block_screen" class="time_div_2"></div>
@@ -26,8 +26,8 @@
     
             <div id="app_div" class="app_div">
 
-                <div id="settings_app" class="apps_div settings_app"></div>
-                <div id="app_store" class="apps_div app_stor"></div>
+                <div class = "ap_ob_div">  <div id="settings_app" class="apps_div settings_app"></div> <h1> Settings </h1> </div>
+                <div class = "ap_ob_div">  <div id="app_store" class="apps_div app_stor"></div> <h1> App Store</h1> </div>
     
             </div>
 
@@ -41,7 +41,7 @@
 
             <div class="avi_wi_blu">
                 <div> <img src="./img/app_icon/settings_app_icons/Airplane-Mode-Icon.jpg" alt=""> Airplane mode <span id="airplane_mod_tumb"> <span id="airplane_mod_tumb_cyc"></span> </span> </div>
-                <div> <img src="./img/app_icon/settings_app_icons/Wi-Fi-settings-icon.jpg" alt=""> Wi-Fi</div>
+                <div> <img src="./img/app_icon/settings_app_icons/Wi-Fi-settings-icon.jpg" alt=""> Wi-Fi <span id="airplane_mod_tumb_2"> <span id="airplane_mod_tumb_cyc_2"></span> </span> </div>
                 <div id="walpaper_button"> Wallpaper </div>
             </div>
 
@@ -72,14 +72,55 @@
                 <h1>Calculator</h1>
 
                 <button id="get_button_calc"> Get </button>
+                <div id="load_div" class="load_div"> ✓ </div>
             </div>
         </section>
 
+
+        <!-- CALCULATOR SCREEN -->
+
+        <section id="calc_screen" class = "calc_screen">
+
+            <div  class="ekr_1"> <input id="ekr" class="inp" type="text"> </div>
+
+        <div class="klav">
+
+            <button id="yot" class="but">7</button>
+            <button id="ut" class="but">8</button>
+            <button id="inn" class="but">9</button>
+            <button id="gum" class="but but_2">+</button>
+            <button id="chors" class="but">4</button>
+            <button id="hing" class="but">5</button>
+            <button id="vec" class="but">6</button>
+            <button id="han" class="but but_2">-</button>
+            <button id="mek" class="but">1</button>
+            <button id="erk" class="but">2</button>
+            <button id="ereq" class="but">3</button>
+            <button id="bazm" class="but but_2 btn_3">*</button>
+            <button id="c" class="but">c</button>
+            <button id="zro" class="but">0</button>
+            <button id="hav" class="but">=</button>
+            <button id="baj" class="but but_2">/</button>
+
+        </div>
+
+    </div>
+
+
+        </section>
+
+
+        <!-- Please_enable_wifi_screen -->
+
+        <section id="pls_en_wi"class = "pls_en_wi">
+            Please Enable Wifi
+        </section>
       
 
 
 
     </div>
+
     <div id="home_button" class="home_but"></div>
 
 </body>

@@ -1,3 +1,6 @@
+const load_div = document.getElementById("load_div");
+const wi_fi_icon = document.getElementById("wi_fi_icon");
+
 
 // Screens
 const screen = document.getElementById("screen");
@@ -6,6 +9,8 @@ const block_screen = document.getElementById("block_screen");
 const settings_app_screen = document.getElementById("settings_app_screen");
 const wallpapers_screen = document.getElementById("wallpapers_screen");
 const app_stor_app_screen = document.getElementById("app_stor_app_screen");
+const pls_en_wi = document.getElementById("pls_en_wi");
+const calc_screen = document.getElementById("calc_screen");
 
 //Buttons
 const home_button = document.getElementById("home_button");
@@ -21,16 +26,37 @@ const app_store = document.getElementById("app_store");
 
 
 // TUMB
-const airplane_mod_tumb = document.getElementById("airplane_mod_tumb");
-const airplane_mod_tumb_cyc = document.getElementById("airplane_mod_tumb_cyc");
+
+let airpalne_mod = 0;
+let wifi = 0;
+
 // 0-OFF 1-ON
 let tumb_of_on = 0;
 
 
+// CALC APP 
+const yot = document.getElementById("yot");
+const ut = document.getElementById("ut");
+const vec = document.getElementById("vec");
+const inn = document.getElementById("inn");
+const hing = document.getElementById("hing");
+const chors = document.getElementById("chors");
+const ereq = document.getElementById("ereq");
+const erku = document.getElementById("erku");
+const mek = document.getElementById("mek");
+const gum = document.getElementById("gum");
+const han = document.getElementById("han");
+const bazm = document.getElementById("bazm");
+const c = document.getElementById("c");
+const hav = document.getElementById("hav");
+const baj = document.getElementById("baj");
+const ekr = document.getElementById("ekr");
+const zro = document.getElementById("zro");
+
 
 // CALCK APP KA TE CHE
-
 let cal_app_ktc = 0;
+
 
 // WALLPAPERS
 const wallpaper_1 = document.getElementById("wallpaper_1");
@@ -74,17 +100,9 @@ home_button.addEventListener("click", () => {
     settings_app_screen.style.display = "none";
     wallpapers_screen.style.display = 'none';
     app_stor_app_screen.style.display = "none";
+    pls_en_wi.style.display  = "none";
+    calc_screen.style.display ="none"
 }) ;
-
-// APP OPEN
-
-settings_app.addEventListener("click", () => {
-    settings_app_screen.style.display =  "flex"
-});
-
-app_store.addEventListener("click", () => {
-    app_stor_app_screen.style.display = "flex"
-});
 
 
 // APP CREATE
@@ -99,9 +117,17 @@ get_button_calc.addEventListener("click", ()  => {
 
         app_div.appendChild(calc_app_ce);
 
-        get_button_calc.innerText = "Delete";
+        load_div.style.display = "flex"
+        get_button_calc.style.display = "none"
 
-        cal_app_ktc = 1
+        setTimeout(() => {
+            get_button_calc.style.display = "flex"
+            get_button_calc.innerText = "Delete";
+            load_div.style.display = "none";
+            cal_app_ktc = 1
+        }, 1000);
+
+
 
     } else if (cal_app_ktc == 1) {
 
@@ -113,26 +139,68 @@ get_button_calc.addEventListener("click", ()  => {
     }
 })
 
-cal_app_ktc
 
-//TUMB OFF-ON
+
+
+//TUMB OFF-ON  Airplane Mod
 
 airplane_mod_tumb.addEventListener("click", () =>  {
-    if (tumb_of_on == 0) {
+    if (airpalne_mod == 0) {
 
         airplane_mod_tumb.style.backgroundColor = "green";
         airplane_mod_tumb_cyc.style.marginLeft = "47%";
 
-        tumb_of_on = 1
+        airpalne_mod = 1
 
-    } else if (tumb_of_on == 1) {
+    } else if (airpalne_mod == 1) {
 
         airplane_mod_tumb.style.backgroundColor = "#404040";
         airplane_mod_tumb_cyc.style.marginLeft = "-4%";
 
-        tumb_of_on  = 0
+        airpalne_mod  = 0
     }
 })
+
+//TUMB Wi_Fi
+
+airplane_mod_tumb_2.addEventListener("click", () =>  {
+    if (wifi == 0) {
+
+        airplane_mod_tumb_2.style.backgroundColor = "green";
+        airplane_mod_tumb_cyc_2.style.marginLeft = "47%";
+
+        wi_fi_icon.style.display = "flex"
+
+        wifi = 1
+
+    } else if (wifi == 1) {
+
+        airplane_mod_tumb_2.style.backgroundColor = "#404040";
+        airplane_mod_tumb_cyc_2.style.marginLeft = "-4%";
+
+        wi_fi_icon.style.display = "none"
+
+        wifi  = 0
+    }
+})
+
+// APP OPEN
+
+settings_app.addEventListener("click", () => {
+    settings_app_screen.style.display =  "flex"
+});
+
+calc_app_ce.addEventListener("click", () => {
+    calc_screen.style.display = "flex"
+}) 
+
+app_store.addEventListener("click", () => {
+    if (wifi == 1) {
+        app_stor_app_screen.style.display = "flex"
+    } else if(wifi == 0) {
+        pls_en_wi.style.display = "flex"
+    }
+});
 
 
 // WALLPERS
@@ -171,3 +239,72 @@ wallpaper_6.addEventListener("click", () => {
     screen.style.backgroundSize = "100% 130%"
 })
 
+
+// CALCULATOR 
+
+yot.addEventListener("click", () => {
+    ekr.value += "7"
+}) 
+
+ut.addEventListener("click", () => {
+    ekr.value += "8"
+}) 
+
+inn.addEventListener("click", () => {
+    ekr.value += "9"
+}) 
+
+vec.addEventListener("click", () => {
+    ekr.value += "6"
+}) 
+
+hing.addEventListener("click", () => {
+    ekr.value += "5"
+}) 
+
+chors.addEventListener("click", () => {
+    ekr.value += "4"
+}) 
+
+ereq.addEventListener("click", () => {
+    ekr.value += "3"
+}) 
+
+erk.addEventListener("click", () => {
+    ekr.value += "2"
+})
+
+mek.addEventListener("click", () => {
+    ekr.value += "1"
+})
+
+zro.addEventListener("click", () => {
+    ekr.value += "0"
+})
+
+gum.addEventListener("click", () => {
+    ekr.value += "+"
+})
+
+
+han.addEventListener("click", () => {
+    ekr.value += "-"
+})
+
+
+bazm.addEventListener("click", () => {
+    ekr.value += "*"
+})
+
+
+baj.addEventListener("click", () => {
+    ekr.value += "/"
+})
+
+hav.addEventListener("click", () => {
+    ekr.value = eval(ekr.value)
+})
+
+c.addEventListener("click", () => {
+    ekr.value = ""
+})
