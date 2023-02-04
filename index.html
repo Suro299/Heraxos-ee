@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script async src="./js/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heraxos</title>
+</head>
+<body>
+    
+    <div id="loading_div">
+        <h1> Loading...</h1>
+        <h4>If you can't load, reload the page.</h4>
+    </div>
+
+    <div class="nast_div">
+        <button id = "st_nast_div_id" class="nast_div_but">
+            Settings
+        </button>
+    </div>
+
+    <div id="nast_div_window" class="nast_div_window">
+        
+        <h1> background Color </h1>
+        <div>
+            <h4>C1</h4> <input type="color" value="#000000" name="" id="nast_div_bac_inp_col_1">
+            <h4>C2</h4><input type="color" value="#250945" name="" id="nast_div_bac_inp_col_2">
+
+        </div>
+
+        <h1> Stroke </h1>
+        <div>
+            <h4 style="margin-right: 0rem;">Color</h4> <input type="color" value="#323581" name="" id="nast_div_bac_stroke_col">
+            <h4 style="margin-right: 0rem; ">Size</h4> <input style="width: 5rem;" min="0" max="100" type="number" value="25" name="" id="nast_div_bac_stroke_siz">
+        </div>
+
+        <div>
+            <button id="nast_div_but_ap"> Append </button>
+            <button id="nast_div_but_res"> Reset </button>
+        </div>
+
+    </div>
+    
+    <div id="mikrafon"></div>
+    <div class="camera"></div>
+   
+
+    <div id="her_div" class="her_div">
+
+        <section id="screen" class="screen">
+
+            <header class="header">
+                <img style="margin-left: 30rem;"  id="bltm_mod_icon"  src="/img/icon/Bluetooth_icon.png" alt="">
+                <img id="wi_fi_icon" src="./img/icon/Wi-Fi_icon.png" alt="">  
+                <div style="font-size: 1rem; font-weight: 600; position: absolute; margin-left: -28rem; display: none;" id="cell_icon" > LTE </div>
+                <img id="airplan_mod_icon" style="width: 3.5%;" src="./img/icon/Airplane-Mode-icon.png" alt=""> 
+                <div id="time_div_header"></div> 
+            
+            </header>
+
+            <div id="block_screen" class="bl_screen">
+                <div id="time_div_block_screen" class="time_div_2"></div>
+                <p class="phb"> Please press home button </p>
+            </div>
+    
+    
+            <div id="app_div" class="app_div">
+
+                <div id="settings_app" class="apps_div settings_app">
+                    <h1 class="apps_div_h1">Settings</h1>
+                </div>
+
+                <div id="app_store" class="apps_div app_stor">
+                    <h1 class="apps_div_h1">App Store</h1>
+                </div>
+    
+    
+            </div>
+
+            
+        </section>
+        
+        
+        <!-- SETTINGS SCREEN SECTIOM -->
+    
+        <section id="settings_app_screen" class="settings_app_screen">
+
+            <div class="set_blok set_blok_1">
+                <div> <img src="./img/app_icon/settings_app_icons/Airplane-Mode-Icon.jpg" alt=""> Airplane mode <span id="airplane_mod_tumb"> <span id="airplane_mod_tumb_cyc"></span> </span> </div>
+                <div> <img src="./img/app_icon/settings_app_icons/Wi-Fi-settings-icon.jpg" alt=""> Wi-Fi <span id="wi_fi_mod_tumb"> <span id="wi_fi_mod_tumb_cyc"></span> </span> </div>
+                <div> <img src="./img/app_icon/settings_app_icons/bluetooth-settings-icon.png" alt=""> Bluetooth <span id="blt_mod_tumb"> <span id="blt_mod_tumb_cyc"></span> </span> </div>
+                <div> <img src="./img/app_icon/settings_app_icons/cellular-settings-icon.png" alt=""> Cellular <span id="cell_mod_tumb"> <span id="cell_mod_tumb_cyc"></span> </span> </div>
+               
+            </div>
+
+            <div class="set_blok sett_blok_2">
+                <div id ="set_general_button"> <img src="./img/app_icon/settings_app_icons/settings_icon.png" alt=""> General </div>
+                <div id ="set_accessibility_button"> <img src="./img/app_icon/settings_app_icons/acces-settings-icon.png" alt=""> Accessibility </div>
+                <div id ="set_privacy_button"> <img style="height: 2.2rem;"src="./img/app_icon/settings_app_icons/privacy-settings-icon.png" alt=""> Privacy </div>
+                <div id="walpaper_button"> Wallpaper </div>
+            </div>
+
+
+            
+
+        </section>
+
+
+        <!-- WALLPAPER SCREEN -->
+
+        <sectoin id="wallpapers_screen" class="wallpapers_screen">
+            
+            <span class="back_sett_but_span">
+                <button id ="back_sett_but"  class="back_sett_but">
+                    🠔 Settings
+                </button>    
+            </span>
+
+            <div class="walp_div_div">
+                <div style="z-index: 10;" id="wallpaper_1"> <img src="./img/Wallpers/wallper_1.jpg" alt=""> </div>
+                <div style="z-index: 10;" id="wallpaper_2"> <img src="./img/Wallpers/wallper_2.png" alt=""> </div>
+                <div style="z-index: 10;" id="wallpaper_3"> <img src="./img/Wallpers/wallper_3.jpg" alt=""> </div>
+                <div style="z-index: 10;" id="wallpaper_4"> <img src="./img/Wallpers/wallper_4.jpg" alt=""> </div>
+                <div style="z-index: 10;" id="wallpaper_5"> <img src="./img/Wallpers/wallper_5.jpg" alt=""> </div>
+                <div style="z-index: 10;" id="wallpaper_6"> <img src="./img/Wallpers/wallper_6.jpg" alt=""> </div>
+            </div>
+   
+        </sectoin>
+
+
+        <!-- APPSTORE SCREEN -->
+
+        <section id="app_stor_app_screen" class="app_stor_app_screen">
+            <div class="calcul_app_div_app">
+                <img src="./img/app_icon/app_store_app_icon/Calculyator/Calculyator_app_icon.png" alt="">
+
+                <h1>Calculator</h1>
+
+                <button id="get_button_calc"> Get </button>
+                
+                <div id="load_div" class="load_div">
+                    <circle cx="57" cy="57" r="52" class="circle"/> 
+                    <circle cx="57" cy="57" r="52" class="loader"/> 
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CALCULATOR SCREEN -->
+
+        <section id="calc_screen" class = "calc_screen">
+
+            <div  class="ekr_1"> <input id="ekr" class="inp" type="text"> </div>
+
+        <div class="klav">
+
+            <button id="yot" class="but">7</button>
+            <button id="ut" class="but">8</button>
+            <button id="inn" class="but">9</button>
+            <button id="gum" class="but but_2">+</button>
+            <button id="chors" class="but">4</button>
+            <button id="hing" class="but">5</button>
+            <button id="vec" class="but">6</button>
+            <button id="han" class="but but_2">-</button>
+            <button id="mek" class="but">1</button>
+            <button id="erk" class="but">2</button>
+            <button id="ereq" class="but">3</button>
+            <button id="bazm" class="but but_2 btn_3">*</button>
+            <button id="c" class="but">c</button>
+            <button id="zro" class="but">0</button>
+            <button id="hav" class="but">=</button>
+            <button id="baj" class="but but_2">/</button>
+
+        </div>
+
+    </div>
+
+
+        </section>
+
+
+        <!-- Please_enable_wifi_screen -->
+
+        <section id="pls_en_wi"class = "pls_en_wi">
+            Turn on mobile data or use Wi-Fi access the App Store
+
+            <div class="en_wi_fi_set_but_div">
+                <button id="en_wi_fi_set_but" class="en_wi_fi_set_but">
+                    Settings
+                </button>
+            </div>
+        </section>
+      
+
+
+
+    </div>
+
+    <div id="home_button" class="home_but"></div>
+
+</body>
+</html>
